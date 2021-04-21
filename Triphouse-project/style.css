@@ -21,7 +21,7 @@
 
 .top{
     margin: 0px auto;
-    min-height: 100vh;
+    height: 100vh;
     max-width: 100%;
     background-image: url(./AllPictures/TopBackground.svg);
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
     margin: auto;
     width: 90%; 
     max-width: 1223px;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -45,7 +45,7 @@
 }
 
 header{
-    margin: 51px 0 202px;
+    margin: 5vh 0 20vh;
     display: flex;
     justify-content: space-between;
 }
@@ -57,8 +57,7 @@ header{
 }
 
 .header_logo {
-    background-image: url(./AllPictures/HeaderLogo.svg);
-    background-size: contain;
+    background: url(./AllPictures/css_sprite.png) -10px -10px;
     background-repeat: no-repeat;
     width: 205px;
     height: 40px;
@@ -66,7 +65,7 @@ header{
 
 @media (max-width: 480px){
     .header_logo{
-        background-image:url(./AllPictures/PhoneHeaderLogo.svg);
+        background:url(./AllPictures/css_sprite.png)  -10px -70px;
         width: 122px;
         height: 24px;
     } 
@@ -113,38 +112,32 @@ header{
     margin-left: 24px;
     width: 30px;
     height: 30px;
-    background-image: url(./AllPictures/Night.svg);
-    background-position: center;
-    background-size: contain;
+    background: url(./AllPictures/css_sprite.png) -130px -153px;    
     background-repeat: no-repeat;
 }
 
 .header_menu_icon_Night:hover, .header_menu_icon_Night:active{
-    background-image: url(./AllPictures/NightActive.svg);
+    background: url(./AllPictures/css_sprite.png) -180px -153px;
 }
 
 .header_menu_icon_Account{
     display: block;
     width: 40px;
     height: 40px;
-    background-image: url(./AllPictures/AccountCircle.svg);
-    background-position: center;
-    background-size: contain;
+    background: url(./AllPictures/css_sprite.png) -10px -153px;  
     background-repeat: no-repeat;
 }
 
 .header_menu_icon_Account:hover, .header_menu_icon_Account:active{
-    background-image:url(./AllPictures/AccountCircleActive.svg);
+    background:url(./AllPictures/css_sprite.png) -70px -153px;
 }
 
 .Phone_header_menu_icon{
     display: none;
-    background-image: url(./AllPictures/Menu.svg);
+    background: url(./AllPictures/css_sprite.png) -235px -54px;
     Width: 24px;
     Height: 16px;
     margin-left: 16px;
-    background-position: center;
-    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -152,10 +145,18 @@ header{
     .header_menu_icon_Night{
         Width: 16px;
         Height: 16px;
+        background: url(./AllPictures/css_sprite.png) -235px -90px;
+    }
+    .header_menu_icon_Night:hover, .header_menu_icon_Night:active{
+        background: url(./AllPictures/css_sprite.png) -235px -126px;
     }
     .header_menu_icon_Account{
         width: 24px;
         height: 24px;
+        background: url(./AllPictures/css_sprite.png) -152px -70px;
+    }
+    .header_menu_icon_Account:hover, .header_menu_icon_Account:active{
+        background:url(./AllPictures/css_sprite.png) -235px -10px;
     }
     .Phone_header_menu_icon{
         display: block;
@@ -163,7 +164,7 @@ header{
 }
 
 .top_title{
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 50px;
@@ -180,7 +181,7 @@ header{
 }
 
 .top_form{
-    margin-bottom: 120px;
+    margin-bottom: 10vh;
 }
 
 .top_form_lables{
@@ -276,7 +277,7 @@ header{
 }
 
 .phone_top_form_block_input{
-    max-width: 100px;
+    max-width: 90px;
     border: none;
     border-radius: 8px;
 }
@@ -294,7 +295,6 @@ header{
 }
 
 .top_page_apps{
-    margin-bottom: 120px;
     width: 270px;
     display: flex;
     justify-content: space-around;    
@@ -503,9 +503,7 @@ footer{
     margin-bottom: 40px;
     height: 19px;
     width: 98px;
-    background-image: url(./AllPictures/PhoneFooterLogo.svg);
-    background-position: center;
-    background-size: contain;
+    background: url(./AllPictures/css_sprite.png) -10px -114px;
     background-repeat: no-repeat;
 }
 
