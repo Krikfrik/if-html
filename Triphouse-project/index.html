@@ -9,68 +9,97 @@
   </head>
   <body>
     <div class="top">
-      <div class="top_wrapper">
+      <div class="top_conteiner">
         <header>
-          <div class="header_logo">
-            <img src="./AllPictures/HeaderLogo.svg" alt="TripHouse" class="header_logo_img"/>
-          </div>
-          <div class="header_menu_wrapper">
-            <ul class="header_menu">
-              <li class="header_menu_item">
-                <a href="#" class="header_menu_link">Stays</a>
-              </li>
-              <li class="header_menu_item">
-                <a href="#" class="header_menu_link">Attractions</a>
-              </li>
-              <li class="header_menu_item">
-                <img src="./AllPictures/Night.svg" alt="Night" />
-              </li>
-              <li class="header_menu_item">
-                <img src="./AllPictures/AccountCircle.svg" alt="Acccount"/>
-              </li>
-            </ul>
-          </div>
+          <div class="header_logo"></div>
+          <ul class="header_menu">
+            <li class="header_menu_item">
+              <a href="#" class="header_menu_link">Stays</a>
+            </li>
+            <li class="header_menu_item">
+              <a href="#" class="header_menu_link">Attractions</a>
+            </li>
+            <li class="header_menu_item">
+              <a href="#" class="header_menu_icon_Night"></a>
+            </li>
+            <li class="header_menu_item">
+              <a href="#" class="header_menu_icon_Account"></a>
+            </li>
+            <li>
+              <a href="#" class="Phone_header_menu_icon"></a>
+            </li>
+          </ul>
         </header>
-        <div class="top_page">
-          <div class="top_page_title">
-            <p>Discover stays</p>
-            <p>to live, work or just relax</p>
+        <p class="top_title">Discover stays<br/>to live, work or just relax</p>
+        <form class="top_form" action="">
+          <div class="top_form_lables">
+            <label for="place">Your destination or hotel name</label>
+            <label for="time">Check-in — Check-out</label>
           </div>
-          <div class="top_page_search"></div>
-          <div class="top_page_apps">
-            <img src="./AllPictures/GooglePlayBadge.svg" alt="Google Play"/>
-            <img src="./AllPictures/AppStoreBadge.svg" alt="App Store"/>
+          <div class="top_form_search">
+            <input class="top_form_search_input" id="place" name="Place" type="text" placeholder="New York"/>
+            <input class="top_form_search_input" id="time" name="Time" type="date" placeholder="Tue 15 Sept — Sat 19 Sept"/>
+            <input class="top_form_search_input" id="visitors" type="text" placeholder="2 Adults — 0 Children — 1 Room"/>
+            <button class="top_form_search_button">Search</button>
           </div>
+        </form>
+        <form class="phone_top_form" action="">
+          <input class="phone_top_form_row" type="search" name="Place" placeholder="Your destination or hotel name">
+          <div class="phone_top_form_row">
+            <div class="phone_top_form_block" class="phone_top_form_block_1">
+              <label for="CheckIn">Check-in date</label>
+              <input class="phone_top_form_block_input" type="date" name="CheckIn" id="CheckIn">
+            </div>
+            <div class="phone_top_form_block">
+              <label for="CheckOut">Check-out date</label>
+              <input class="phone_top_form_block_input" type="date" name="CheckOut" id="CheckOut">
+            </div>
+          </div>
+          <div class="phone_top_form_row">
+            <div class="phone_top_form_block">
+              <label for="Adults">Adults</label>
+              <input class="phone_top_form_block_input" type="number" name="Adults" id="Adults" placeholder="0">
+            </div>
+            <div class="phone_top_form_block">
+              <label for="Children">Children</label>
+              <input class="phone_top_form_block_input" type="number" name="Children" id="Children" placeholder="0">
+            </div>
+            <div class="phone_top_form_block">
+              <label for="Rooms">Rooms</label>
+              <input class="phone_top_form_block_input" type="number" name="Rooms" id="Rooms" placeholder="0">
+            </div>
+          </div>
+          <button class="phone_top_form_button">Search</button>
+        </form>
+        <div class="top_page_apps">
+            <a href="#"><img src="./AllPictures/GooglePlayBadge.svg" alt="Google Play"/></a>
+            <a href="#"><img src="./AllPictures/AppStoreBadge.svg" alt="App Store"/></a>
         </div>
       </div>
     </div>
-    <div class="wrapper">
-      <h1 class="wrapper_title">What do we offer</h1>
-      <div class="wrapper_line"></div>
-      <div class="wrapper_items">
-          <div class="wrapper_item">
-            <div class="wrapper_item_img">
-              <img src="./AllPictures/WdwoVector1.svg" alt="Headphones"/>
+    <div class="Offer">
+      <h1 class="Offer_title">What do we offer</h1>
+      <div class="Offer_line"></div>
+      <div class="Offer_items_conteiner">
+          <div class="Offer_item">
+            <div class="Offer_item_img" id="Headphones">
             </div>
-            <span class="wrapper_item_text">Support 24/7</span>
+            <span class="Offer_item_text">Support 24/7</span>
           </div>
-          <div class="wrapper_item">
-            <div class="wrapper_item_img">
-              <img src="./AllPictures/WdwoVector2.svg" alt="Messages">
+          <div class="Offer_item">
+            <div class="Offer_item_img" id="Messages">
             </div>
-            <span class="wrapper_item_text">Communicate directly</span>
+            <span class="Offer_item_text">Communicate directly</span>
           </div>
-          <div class="wrapper_item">
-            <div class="wrapper_item_img">
-              <img src="./AllPictures/WdwoVector3.svg" alt="Screens">
+          <div class="Offer_item">
+            <div class="Offer_item_img" id="Screens">
             </div>
-            <span class="wrapper_item_text">Book online</span>
+            <span class="Offer_item_text">Book online</span>
           </div>
-          <div class="wrapper_item">
-            <div class="wrapper_item_img">
-              <img src="./AllPictures/WdwoVector4.svg" alt="Thumb Up">
+          <div class="Offer_item">
+            <div class="Offer_item_img" id="ThumbUp">
             </div>
-            <span class="wrapper_item_text">Real guest reviews</span>
+            <span class="Offer_item_text">Real guest reviews</span>
           </div>
       </div>
     </div>
@@ -133,7 +162,12 @@
         </table>
       </div>
       <div class="phone_footer">
-        <img class="phone_footer_logo" src="./AllPictures/PhoneFooterLogo.svg" alt="TripHouse">
+        <div class="phone_footer_logo"></div>
+        <ul class="phone_footer_list">
+          <li><a class="phone_footer_list_link" href="#">About</a></li>
+          <li><a class="phone_footer_list_link" href="#">Property types</a></li>
+          <li><a class="phone_footer_list_link" href="#">Support</a></li>
+        </ul>
       </div>
       <div class="footer_copyright">© 2020 Triphouse, Inc. All rights reserved</div>
     </footer>
